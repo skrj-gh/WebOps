@@ -24,7 +24,7 @@ const showWeather = async (position) => {
     // inserts required info at their placeholder => (basic-info) part
     document.querySelector(".date-time").innerHTML = `<h5>${new Date(value.dt*1000)}</h5>`;
     document.querySelector(".temp-logo").innerHTML = `<img src='http://openweathermap.org/img/w/${value.weather[0].icon}.png'><h1>${value.main.temp}°</h1>`;
-    document.querySelector(".temp").innerHTML = `<h3>${value.main.temp_max}/${value.main.temp_min} feels like ${value.main.feels_like}</h3>`;
+    document.querySelector(".feels").innerHTML = `<h3>${value.main.temp_max}°/${value.main.temp_min}° feels like ${value.main.feels_like}°</h3>`;
     document.querySelector(".forecast").innerHTML = `<h3>${value.weather[0].main}</h3>`;
 
     // inserts required info at their placeholder => (detailed-info) part

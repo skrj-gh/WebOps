@@ -8,35 +8,35 @@ body{
     background-color: rgba(35, 145, 248, 0.772);
 }
 
+
+
+/* for mobile phones and similar small devices */
 .weather{
-    width: 60vw;
-    height: 50vh;
-    display:flex;
-    flex-direction: row;
-    position: absolute;
-    inset: 0;
-    margin: auto;
+    width: 90vw;
+    margin: 5vh 5vw 0 5vw;
+    display: flex;
+    flex-direction: column;
 }
 
 .basic-info{
-    height: 50vh;
-    width: 30vw;
-    display: flex;
+    height: 40vh;
+    width: 100%;
+    display:flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
 }
 
 .location{
     width: auto;
-    height: 4vh;
+    height:4vh;
 }
 
-.location h4{
-    color: #fff;
+.location h4 {
+    color:#fff;
     line-height: 4vh;
-    font-weight: 500;
-    font-size: 3vh;
+    font-weight: 300;
+    font-size: 2.5vh;
+    text-align: center;
 }
 
 .date-time{
@@ -47,9 +47,9 @@ body{
 .date-time h5{
     color: rgb(193, 232, 255);
     line-height: 3vh;
-    font-size: 2.4vh;
-    font-weight: 300;
+    font-size: 2vh;
     text-align: center;
+    font-weight: 300;
 }
 
 .temp-logo{
@@ -63,21 +63,21 @@ body{
 .temp-logo h1{
     color:#fff;
     line-height:25vh;
-    font-size: 12vh;
+    font-size: 10vh;
     font-weight: 100;
-    letter-spacing: -0.8vw;   
+    letter-spacing: -1vw;   
 }
 .temp-logo img{
-    height: 15vh;
+    height: 10vh;
     width: auto;
 }
 
-.temp{
+.feels{
     width: auto;
     height: 3vh;
 }
 
-.temp h3{
+.feels h3{
     color: rgb(193, 232, 255);
     line-height: 3vh;
     font-weight: 300;
@@ -96,11 +96,10 @@ body{
     font-size: 2.5vh;
 }
 
-
 .detailed-info{
     height: 50vh;
-    width: 30vw;
-    display: flex;
+    width: 100%;
+    display:flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
@@ -111,8 +110,9 @@ body{
 .humidity{
     width: 100%;
     box-sizing: border-box;
-    padding: 0 2vw;
-    height: 3vh;
+    padding: 0 3vw;
+    height: 4vh;
+    font-size: 3vh;
     display: flex;
     justify-content: space-between;
     color: rgb(193, 232, 255);
@@ -121,8 +121,9 @@ body{
 .pressure{
     width: 100%;
     box-sizing: border-box;
-    padding: 0 2vw;
-    height: 3vh;
+    padding: 0 3vw;
+    height: 4vh;
+    font-size: 3vh;
     display: flex;
     justify-content: space-between;
     color: rgb(193, 232, 255);
@@ -131,8 +132,9 @@ body{
 .wind-speed{
     width: 100%;
     box-sizing: border-box;
-    padding: 0 2vw;
-    height: 3vh;
+    padding: 0 3vw;
+    height: 4vh;
+    font-size: 3vh;
     display: flex;
     justify-content: space-between;
     color: rgb(193, 232, 255);
@@ -141,8 +143,9 @@ body{
 .wind-dir{
     width: 100%;
     box-sizing: border-box;
-    padding: 0 2vw;
-    height: 3vh;
+    padding: 0 3vw;
+    height: 4vh;
+    font-size: 3vh;
     display: flex;
     justify-content: space-between;
     color: rgb(193, 232, 255);
@@ -151,8 +154,9 @@ body{
 .precipitation{
     width: 100%;
     box-sizing: border-box;
-    padding: 0 2vw;
-    height: 3vh;
+    padding: 0 3vw;
+    height: 4vh;
+    font-size: 3vh;
     display: flex;
     justify-content: space-between;
     color: rgb(193, 232, 255);
@@ -161,8 +165,9 @@ body{
 .visibility{
     width: 100%;
     box-sizing: border-box;
-    padding: 0 2vw;
-    height: 3vh;
+    padding: 0 3vw;
+    height: 4vh;
+    font-size: 3vh;
     display: flex;
     justify-content: space-between;
     color: rgb(193, 232, 255);
@@ -171,9 +176,135 @@ body{
 .clouds{
     width: 100%;
     box-sizing: border-box;
-    padding: 0 2vw;
-    height: 3vh;
+    padding: 0 3vw;
+    height: 4vh;
+    font-size: 3vh;
     display: flex;
     justify-content: space-between;
     color: rgb(193, 232, 255);
+}
+
+/*for very thin and foldable phones*/
+@media only screen and (max-width:280px){
+    .feels h3{
+        font-size: 2.2vh;
+    }
+}
+
+
+/* adjusting the font size to fit the box for small screens */
+@media only screen and (max-width:1000px){
+    .humidity{
+        font-size: 2.5vh;
+    }
+    
+    .pressure{
+        font-size: 2.5vh;
+    }
+    
+    .wind-speed{
+        font-size: 2.5vh;
+    }
+    
+    .wind-dir{
+        font-size: 2.5vh;
+    }
+    
+    .precipitation{
+        font-size: 2.5vh;
+    }
+    
+    .visibility{
+        font-size: 2.5vh;
+    }
+    
+    .clouds{
+        font-size: 2.5vh;
+    }
+}
+
+
+
+
+/*for laptops and tablets*/
+@media only screen and (min-width:1000px){
+    .weather{
+        width: 60vw;
+        height: 50vh;
+        display:flex;
+        flex-direction: row;
+        position: absolute;
+        inset: 0;
+        margin: auto;
+    }
+    
+    .basic-info{
+        height: 50vh;
+        width: 30vw;
+        justify-content: space-evenly;
+    }
+
+    .location h4{
+        font-weight: 500;
+        font-size: 3.5vh;
+    }
+    
+    .date-time h5{
+        font-size: 2.9vh;
+    }
+    
+    .temp-logo h1{
+        font-size: 12vh;
+        letter-spacing: -0.8vw;   
+    }
+    
+    .temp-logo img{
+        height: 15vh;
+    }
+    
+    .detailed-info{
+        width: 30vw;
+    }
+    
+    .humidity{
+        padding: 0 2vw;
+        height: 3vh;
+        font-size: 2.5vh;
+    }
+    
+    .pressure{
+        padding: 0 2vw;
+        height: 3vh;
+        font-size: 2.5vh;
+    }
+    
+    .wind-speed{
+        padding: 0 2vw;
+        height: 3vh;
+        font-size: 2.5vh;
+    }
+    
+    .wind-dir{
+        padding: 0 2vw;
+        height: 3vh;
+        font-size: 2.5vh;
+    }
+    
+    .precipitation{
+        padding: 0 2vw;
+        height: 3vh;
+        font-size: 2.5vh;
+    }
+    
+    .visibility{
+        padding: 0 2vw;
+        height: 3vh;
+        font-size: 2.5vh;
+    }
+    
+    .clouds{
+        padding: 0 2vw;
+        height: 3vh;
+        font-size: 2.5vh;
+    }
 }
