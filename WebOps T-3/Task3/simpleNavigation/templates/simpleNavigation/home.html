@@ -1,0 +1,20 @@
+{% extends "simpleNavigation/base.html" %}
+
+{% block content %}
+    <header>
+        <h1>Home Page Content</h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="{% url 'nav-page1' %}">Page 1</a></li>
+            <li><a href="{% url 'nav-page2' %}">Page 2</a></li>
+        </ul>
+    </nav>
+
+    <main style="text-align:center;">
+        <p>This is the main content of the page.</p>
+        <button><a href="{% url 'nav-page1' %}">Go to Page 1</a></button>
+        <button><a href="{% url 'nav-page2' %}">Go to Page 2</a></button>
+    </main>
+{% endblock content %}
