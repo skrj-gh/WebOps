@@ -1,53 +1,60 @@
-/* Reset some default styles */
-body, h1, h2, h3, p, ul, li {
+*{
     margin: 0;
     padding: 0;
 }
-  
-/* Basic styling */
-body {
-    font-family: Arial, sans-serif;
+
+body{
     background-color: #f7f7f7;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-header {
+header{
     background-color: #333;
-    color: white;
+    color: #fff;
     text-align: center;
-    padding: 1rem;
+    width: 100%;
+    height: 9.5vh;
+}
+header h1{
+    line-height: 9.5vh;
+    font-size: 2.1vw;
+}
+
+nav{
+    width: 100%;
 }
 
 nav ul {
     list-style-type: none;
     background-color: #444;
-    padding: 0.5rem;
+    padding: 10px;
 }
 
 nav ul li {
     display: inline;
-    margin-right: 1rem;
+    margin-right: 1vw;
 }
 
 nav ul li a {
     text-decoration: none;
-    color: white;
+    color: #fff;
 }
 
-main {
-    padding: 2rem;
+section{
+    margin-top: 4.1vh;
 }
 
 button {
     background-color: #007bff;
     color: white;
     border: none;
-    padding: 0.5rem 1rem;
+    padding: 1.1vh 1vw;
     cursor: pointer;
-    margin-right: 1rem;
+    margin-right: 1vw;
+    width: auto;
 }
 
 button a {
     text-decoration: none;
     color: white;
 }
-  
